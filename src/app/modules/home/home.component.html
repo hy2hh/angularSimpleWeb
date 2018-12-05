@@ -1,0 +1,22 @@
+<!-- <h1 [class.gray]="h1Style"> Home </h1> -->
+<h1>Users</h1>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users" class="card">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{user.name}}</mat-card-title>
+        <mat-card-subtitle>Rank : {{user.id}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="user.profile">
+      <mat-card-content>
+        {{user.introduce}}
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button color="warn">
+          <mat-icon aria-label="favorite button">favorite</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </li>
+</ul>

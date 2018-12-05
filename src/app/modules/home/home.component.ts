@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../data.service';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-home',
@@ -14,10 +15,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     console.log(this.data.getUsers());
 
-    this.data.getUsers().subscribe(data => {
-      this.users = data;
-      console.log(this.users);
-    });
+    this.users = HEROES;
+    console.log(this.users);
   }
 
 }

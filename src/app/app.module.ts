@@ -2,14 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { ContactComponent } from './nav/contact/contact.component';
-import { HomeComponent } from './nav/home/home.component';
-import { AboutComponent } from './nav/about/about.component';
+import { NavComponent } from './modules/nav/nav.component';
+import { ContactComponent } from './modules/contact/contact.component';
+import { HomeComponent } from './modules/home/home.component';
+import { AboutComponent } from './modules/about/about.component';
 
+import {
+  MatCardModule, MatButtonModule, MatIconModule, MatTabsModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,12 @@ import { AboutComponent } from './nav/about/about.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
