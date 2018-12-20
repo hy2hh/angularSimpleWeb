@@ -3,11 +3,14 @@
 li {
   list-style: none;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 220px;
   float: left;
   margin-right: 10px;
 }
 
 ul {
   clear: both;
+  overflow: hidden;
+  margin:0;
+  padding:0;
 }

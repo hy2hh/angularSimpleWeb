@@ -1,6 +1,8 @@
 <!-- <h1 [class.gray]="h1Style"> Home </h1> -->
 <h1>Users</h1>
-
+<app-home-sub
+  [parentInfomation]="users"
+  (change)="updatefromChild($event)"></app-home-sub>
 <ul *ngIf="users">
   <li *ngFor="let user of users" class="card">
     <mat-card>

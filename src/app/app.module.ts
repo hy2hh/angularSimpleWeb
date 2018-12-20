@@ -10,6 +10,7 @@ import { NavComponent } from './modules/nav/nav.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { HomeComponent } from './modules/home/home.component';
 import { AboutComponent } from './modules/about/about.component';
+import { HomeSubComponent } from './modules/home/sub/home-sub.component';
 
 import {
   MatCardModule, MatButtonModule, MatIconModule, MatTabsModule
@@ -21,7 +22,8 @@ import {
     NavComponent,
     ContactComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    HomeSubComponent
   ],
   imports: [
     BrowserModule,
